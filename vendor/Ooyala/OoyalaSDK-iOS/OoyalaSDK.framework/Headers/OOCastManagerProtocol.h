@@ -8,16 +8,18 @@
 
 #import <Foundation/Foundation.h>
 @class OOOoyalaPlayer;
+@protocol OOEmbedTokenGenerator;
+
 
 @protocol OOCastManagerProtocol <NSObject>
 
 /**
- * Return YES if the ChromeCastPlugin is connected to a cast device
+ * Return YES if the OOCastManager is connected to a cast device
  */
 - (BOOL)isConnectedToChromecast;
 
 /**
- *  Return the castPlayer related to this ChromeCastPlugin
+ *  Return the castPlayer related to this OOCastManager
  */
 - (id)getCastPlayer;
 
@@ -36,6 +38,7 @@
  */
 - (void)enterCastModeWithEmbedCode:(NSString *)embedCode
                initialPlayheadTime:(Float64)playhead
-                         isPlaying:(BOOL)isPlaying;
+                         isPlaying:(BOOL)isPlaying
+               embedTokenGenerator:(id<OOEmbedTokenGenerator>)embedTokenGenerator;
 
 @end
