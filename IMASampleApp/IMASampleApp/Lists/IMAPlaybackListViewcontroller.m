@@ -21,24 +21,36 @@
   self.title = @"IMA Playback";
   return self;
 }
+
 - (void)addAllPlayerSelectionOptions {
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Ad-Rules Preroll" embedCode:@"EzZ29lcTq49IswgZYkMknnU4Ukb9PQMH" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Ad-Rules Midroll" embedCode:@"VlaG9lcTqeUU18adfd1DVeQ8YekP3H4l" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Ad-Rules Postroll" embedCode:@"BnaG9lcTqLXQNyod7ON8Yv3eDas2Oog6" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Podded Preroll" embedCode:@"1wNjE3cDox0G3hQIWxTjsZ8MPUDLSkDY" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Podded Midroll" embedCode:@"1yNjE3cDodUEfUfp2WNzHkCZCMb47MUP" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Podded Postroll" embedCode:@"1sNjE3cDoN3ZewFm1238ce730J4BMrEJ" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Podded Pre-Mid-Post" embedCode:@"ZrOTE3cDoXo2sLOWzQPxjS__M-Qk32Co" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Skippable" embedCode:@"FhbGRjbzq8tfaoA3dhfxc2Qs0-RURJfO" viewController: [IMAPlayerViewController class]]];
-  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"Pre, Mid and Post Skippable" embedCode:@"10NjE3cDpj8nUzYiV1PnFsjC6nEvPQAE" viewController: [IMAPlayerViewController class]]];
+  [self insertNewObject: [[PlayerSelectionOption alloc] initWithTitle:@"test" embedCode:@"F4MDFidTrZjUQMElbCDUbjxwWcoWveue" viewController: [IMAPlayerViewController class]]];
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+
   self.navigationController.navigationBar.translucent = NO;
   [self.tableView registerNib:[UINib nibWithNibName:@"TableCell" bundle:nil]forCellReuseIdentifier:@"TableCell"];
 
   [self addAllPlayerSelectionOptions];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(forceBack:)
+                                               name:@"forceBack"
+                                             object:nil];
+
+  [self performSelector:@selector(loadIt) withObject:nil afterDelay:0.1];
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+  NSLog( @"LIIIIIIST!!!!!!" );
+}
+
+-(void) forceBack:(NSNotification*) notification {
+  [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void) loadIt {
+  [self tableView:self.tableView didSelectRowAtIndexPath:0];
 }
 
 - (void)insertNewObject:(PlayerSelectionOption *)selectionObject {

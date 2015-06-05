@@ -25,8 +25,6 @@
 		0B94585B1AC32CB3000DD545 /* IMAContentPlayhead.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B94584A1AC32CB3000DD545 /* IMAContentPlayhead.h */; };
 		0B94585C1AC32CB3000DD545 /* IMAUiElements.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B94584B1AC32CB3000DD545 /* IMAUiElements.h */; };
 		0B94585D1AC32CB3000DD545 /* libGoogleIMA3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B94584C1AC32CB3000DD545 /* libGoogleIMA3.a */; };
-		0B94585E1AC32CB3000DD545 /* OoyalaIMASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B94584D1AC32CB3000DD545 /* OoyalaIMASDK.framework */; };
-		0B94585F1AC32CB3000DD545 /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B94584E1AC32CB3000DD545 /* OoyalaSDK.framework */; };
 		0B9458AD1AC3361F000DD545 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9458AC1AC3361F000DD545 /* libxml2.dylib */; };
 		0B9458B81AC339AB000DD545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4FA3E1A68702A0050A602 /* libz.dylib */; };
 		0B94591F1AC33ABF000DD545 /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B94584E1AC32CB3000DD545 /* OoyalaSDK.framework */; };
@@ -58,6 +56,8 @@
 		0BF4FA431A6871F10050A602 /* IMAPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4FA1E1A686CB40050A602 /* IMAPlayerViewController.m */; };
 		0BF4FA441A6871F10050A602 /* IMASampleAppSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4FA261A686CB40050A602 /* IMASampleAppSource.m */; };
 		0BF4FA451A6872130050A602 /* IMAPlaybackListViewcontroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF4FA191A686CB40050A602 /* IMAPlaybackListViewcontroller.h */; };
+		5E33EBF01B212A110015D19A /* OoyalaIMASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E33EBEE1B212A110015D19A /* OoyalaIMASDK.framework */; };
+		5E33EBF11B212A110015D19A /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E33EBEF1B212A110015D19A /* OoyalaSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -123,6 +123,8 @@
 		0BF4FA261A686CB40050A602 /* IMASampleAppSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMASampleAppSource.m; sourceTree = "<group>"; };
 		0BF4FA3C1A686FBC0050A602 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0BF4FA3E1A68702A0050A602 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5E33EBEE1B212A110015D19A /* OoyalaIMASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaIMASDK.framework; path = "../../../sdk/build/Debug-iphoneos/OoyalaIMASDK.framework"; sourceTree = "<group>"; };
+		5E33EBEF1B212A110015D19A /* OoyalaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSDK.framework; path = "../../../sdk/build/Debug-iphoneos/OoyalaSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B94585F1AC32CB3000DD545 /* OoyalaSDK.framework in Frameworks */,
-				0B94585E1AC32CB3000DD545 /* OoyalaIMASDK.framework in Frameworks */,
+				5E33EBF01B212A110015D19A /* OoyalaIMASDK.framework in Frameworks */,
+				5E33EBF11B212A110015D19A /* OoyalaSDK.framework in Frameworks */,
 				0B140F891A2E5374001324EE /* MediaPlayer.framework in Frameworks */,
 				0B140F8F1A2E53BE001324EE /* SystemConfiguration.framework in Frameworks */,
 				0B9458AD1AC3361F000DD545 /* libxml2.dylib in Frameworks */,
@@ -176,6 +178,8 @@
 		0B140FAB1A2E6550001324EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E33EBEE1B212A110015D19A /* OoyalaIMASDK.framework */,
+				5E33EBEF1B212A110015D19A /* OoyalaSDK.framework */,
 				0B9458AC1AC3361F000DD545 /* libxml2.dylib */,
 				0B17A0E81A78206D009D1C50 /* libc++.dylib */,
 				0BF4FA3E1A68702A0050A602 /* libz.dylib */,
@@ -555,6 +559,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VendorLibraries",
+					"/Users/jonslenk/Dev/repos/ios-sdk/sdk/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/IMASampleApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -582,6 +587,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VendorLibraries",
+					"/Users/jonslenk/Dev/repos/ios-sdk/sdk/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/IMASampleApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

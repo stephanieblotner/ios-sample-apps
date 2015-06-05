@@ -27,7 +27,7 @@
 - (id)initWithPlayerSelectionOption:(PlayerSelectionOption *)playerSelectionOption {
   self = [super initWithPlayerSelectionOption: playerSelectionOption];
   self.nib = @"PlayerSimple";
-  self.pcode =@"R2d3I6s06RyB712DN0_2GsQS-R-Y";
+  self.pcode =@"VqcGYxOge0WH88KB17FsPfij19le";
   self.playerDomain = @"http://www.ooyala.com";
 
   if (self.playerSelectionOption) {
@@ -63,7 +63,8 @@
 
 
   // Load the video
-  [_ooyalaPlayerViewController.player setEmbedCode:self.embedCode];
+//  [_ooyalaPlayerViewController.player setEmbedCode:self.embedCode];
+  [_ooyalaPlayerViewController.player setEmbedCode:@"F4MDFidTrZjUQMElbCDUbjxwWcoWveue" adSetCode:@"e5c23831b8164d7a891045ee7a061db7 "];
   [_ooyalaPlayerViewController.player play];
 }
 
