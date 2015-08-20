@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B1AFB801B0C025A00347DFA /* OoyalaCastSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4A92FB1B0A607D00575391 /* OoyalaCastSDK.framework */; };
-		0B1AFB811B0C025D00347DFA /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4A92FC1B0A607D00575391 /* OoyalaSDK.framework */; };
 		0B1AFB821B0C026E00347DFA /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4A92FA1B0A607D00575391 /* GoogleCast.framework */; };
 		0B1AFBDA1B0C09BB00347DFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AFBC21B0C09BB00347DFA /* AppDelegate.m */; };
 		0B1AFBDB1B0C09BB00347DFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1AFBC31B0C09BB00347DFA /* LaunchScreen.xib */; };
@@ -24,6 +22,21 @@
 		0B1AFBE61B0C09BB00347DFA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AFBD81B0C09BB00347DFA /* Utils.m */; };
 		0B89E2501B1FC85300306176 /* ChromecastPlayerSelectionOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B89E24F1B1FC85300306176 /* ChromecastPlayerSelectionOption.m */; };
 		5EA5A7E91B6C07DC008C691C /* OOCastManagerFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5A7E81B6C07DC008C691C /* OOCastManagerFetcher.m */; };
+		5EA665501B855ED500A487C3 /* bgroupcert.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5EA665491B855ED500A487C3 /* bgroupcert.dat */; };
+		5EA665511B855ED500A487C3 /* devcerttemplate.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6654A1B855ED500A487C3 /* devcerttemplate.dat */; };
+		5EA665521B855ED500A487C3 /* iOS-cap.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6654B1B855ED500A487C3 /* iOS-cap.xml */; };
+		5EA665531B855ED500A487C3 /* priv.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6654C1B855ED500A487C3 /* priv.dat */; };
+		5EA665541B855ED500A487C3 /* volog.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6654D1B855ED500A487C3 /* volog.cfg */; };
+		5EA665551B855ED500A487C3 /* voVidDec-ios.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6654E1B855ED500A487C3 /* voVidDec-ios.dat */; };
+		5EA665561B855ED500A487C3 /* zgpriv.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6654F1B855ED500A487C3 /* zgpriv.dat */; };
+		5EC7997D1B852F4200977407 /* OoyalaCastSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC7997A1B852F4200977407 /* OoyalaCastSDK.framework */; };
+		5EC7997E1B852F4200977407 /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC7997B1B852F4200977407 /* OoyalaSDK.framework */; };
+		5EC7997F1B852F4200977407 /* OoyalaSecurePlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC7997C1B852F4200977407 /* OoyalaSecurePlayerSDK.framework */; };
+		5EC799811B852F6000977407 /* SecurePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC799801B852F6000977407 /* SecurePlayer.framework */; };
+		5EC799831B852F6B00977407 /* libresolv.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC799821B852F6B00977407 /* libresolv.9.dylib */; };
+		5EC799851B852F7200977407 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC799841B852F7200977407 /* OpenGLES.framework */; };
+		5EC799871B852F7800977407 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC799861B852F7800977407 /* AudioToolbox.framework */; };
+		5EC799891B85305A00977407 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC799881B85305A00977407 /* ExternalAccessory.framework */; };
 		FF21F0DB19CB7A2100FE9D07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF21F0D319CB7A2100FE9D07 /* AVFoundation.framework */; };
 		FF21F0DC19CB7A2100FE9D07 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF21F0D419CB7A2100FE9D07 /* CFNetwork.framework */; };
 		FF21F0DD19CB7A2100FE9D07 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF21F0D519CB7A2100FE9D07 /* CoreMedia.framework */; };
@@ -66,6 +79,21 @@
 		0B89E24F1B1FC85300306176 /* ChromecastPlayerSelectionOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromecastPlayerSelectionOption.m; sourceTree = "<group>"; };
 		5EA5A7E71B6C07DC008C691C /* OOCastManagerFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCastManagerFetcher.h; sourceTree = "<group>"; };
 		5EA5A7E81B6C07DC008C691C /* OOCastManagerFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCastManagerFetcher.m; sourceTree = "<group>"; };
+		5EA665491B855ED500A487C3 /* bgroupcert.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = bgroupcert.dat; path = ChromecastSampleApp/VOResources/bgroupcert.dat; sourceTree = "<group>"; };
+		5EA6654A1B855ED500A487C3 /* devcerttemplate.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = devcerttemplate.dat; path = ChromecastSampleApp/VOResources/devcerttemplate.dat; sourceTree = "<group>"; };
+		5EA6654B1B855ED500A487C3 /* iOS-cap.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "iOS-cap.xml"; path = "ChromecastSampleApp/VOResources/iOS-cap.xml"; sourceTree = "<group>"; };
+		5EA6654C1B855ED500A487C3 /* priv.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = priv.dat; path = ChromecastSampleApp/VOResources/priv.dat; sourceTree = "<group>"; };
+		5EA6654D1B855ED500A487C3 /* volog.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = volog.cfg; path = ChromecastSampleApp/VOResources/volog.cfg; sourceTree = "<group>"; };
+		5EA6654E1B855ED500A487C3 /* voVidDec-ios.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = "voVidDec-ios.dat"; path = "ChromecastSampleApp/VOResources/voVidDec-ios.dat"; sourceTree = "<group>"; };
+		5EA6654F1B855ED500A487C3 /* zgpriv.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = zgpriv.dat; path = ChromecastSampleApp/VOResources/zgpriv.dat; sourceTree = "<group>"; };
+		5EC7997A1B852F4200977407 /* OoyalaCastSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaCastSDK.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/OoyalaSDK-bggukxbtjposffhjkaloyjtxnkxf/Build/Products/Debug-iphoneos/OoyalaCastSDK.framework"; sourceTree = "<group>"; };
+		5EC7997B1B852F4200977407 /* OoyalaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSDK.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/OoyalaSDK-bggukxbtjposffhjkaloyjtxnkxf/Build/Products/Debug-iphoneos/OoyalaSDK.framework"; sourceTree = "<group>"; };
+		5EC7997C1B852F4200977407 /* OoyalaSecurePlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OoyalaSecurePlayerSDK.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/OoyalaSDK-bggukxbtjposffhjkaloyjtxnkxf/Build/Products/Debug-iphoneos/OoyalaSecurePlayerSDK.framework"; sourceTree = "<group>"; };
+		5EC799801B852F6000977407 /* SecurePlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurePlayer.framework; path = ../../../vendor/SecurePlayer/release/SecurePlayer.framework; sourceTree = "<group>"; };
+		5EC799821B852F6B00977407 /* libresolv.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.9.dylib; path = usr/lib/libresolv.9.dylib; sourceTree = SDKROOT; };
+		5EC799841B852F7200977407 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5EC799861B852F7800977407 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5EC799881B85305A00977407 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FF21F07619CB5ABC00FE9D07 /* ChromecastSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromecastSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF21F0D319CB7A2100FE9D07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FF21F0D419CB7A2100FE9D07 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -96,9 +124,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC799891B85305A00977407 /* ExternalAccessory.framework in Frameworks */,
+				5EC799871B852F7800977407 /* AudioToolbox.framework in Frameworks */,
+				5EC799851B852F7200977407 /* OpenGLES.framework in Frameworks */,
+				5EC799831B852F6B00977407 /* libresolv.9.dylib in Frameworks */,
+				5EC799811B852F6000977407 /* SecurePlayer.framework in Frameworks */,
+				5EC7997D1B852F4200977407 /* OoyalaCastSDK.framework in Frameworks */,
+				5EC7997E1B852F4200977407 /* OoyalaSDK.framework in Frameworks */,
+				5EC7997F1B852F4200977407 /* OoyalaSecurePlayerSDK.framework in Frameworks */,
 				0B1AFB821B0C026E00347DFA /* GoogleCast.framework in Frameworks */,
-				0B1AFB801B0C025A00347DFA /* OoyalaCastSDK.framework in Frameworks */,
-				0B1AFB811B0C025D00347DFA /* OoyalaSDK.framework in Frameworks */,
 				FF49D21319CBABAE001B156F /* libxml2.dylib in Frameworks */,
 				FF49D21119CBABA2001B156F /* libc++.dylib in Frameworks */,
 				FF49D20F19CBAB91001B156F /* SystemConfiguration.framework in Frameworks */,
@@ -204,6 +238,13 @@
 		FF21F06D19CB5ABC00FE9D07 = {
 			isa = PBXGroup;
 			children = (
+				5EA665491B855ED500A487C3 /* bgroupcert.dat */,
+				5EA6654A1B855ED500A487C3 /* devcerttemplate.dat */,
+				5EA6654B1B855ED500A487C3 /* iOS-cap.xml */,
+				5EA6654C1B855ED500A487C3 /* priv.dat */,
+				5EA6654D1B855ED500A487C3 /* volog.cfg */,
+				5EA6654E1B855ED500A487C3 /* voVidDec-ios.dat */,
+				5EA6654F1B855ED500A487C3 /* zgpriv.dat */,
 				0B1AFBC01B0C09BB00347DFA /* ChromecastSampleApp */,
 				FF49D21519CBAC4D001B156F /* Frameworks */,
 				FF21F07719CB5ABC00FE9D07 /* Products */,
@@ -222,6 +263,14 @@
 		FF49D21519CBAC4D001B156F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EC799881B85305A00977407 /* ExternalAccessory.framework */,
+				5EC799861B852F7800977407 /* AudioToolbox.framework */,
+				5EC799841B852F7200977407 /* OpenGLES.framework */,
+				5EC799821B852F6B00977407 /* libresolv.9.dylib */,
+				5EC799801B852F6000977407 /* SecurePlayer.framework */,
+				5EC7997A1B852F4200977407 /* OoyalaCastSDK.framework */,
+				5EC7997B1B852F4200977407 /* OoyalaSDK.framework */,
+				5EC7997C1B852F4200977407 /* OoyalaSecurePlayerSDK.framework */,
 				FF49D1FE19CBA9C6001B156F /* libWViPhoneAPI.a */,
 				FF49D21219CBABAE001B156F /* libxml2.dylib */,
 				FF49D21019CBABA2001B156F /* libc++.dylib */,
@@ -304,7 +353,14 @@
 			files = (
 				FF4264A01B18D79900CED97A /* Main.storyboard in Resources */,
 				0B1AFBDB1B0C09BB00347DFA /* LaunchScreen.xib in Resources */,
+				5EA665531B855ED500A487C3 /* priv.dat in Resources */,
+				5EA665561B855ED500A487C3 /* zgpriv.dat in Resources */,
+				5EA665501B855ED500A487C3 /* bgroupcert.dat in Resources */,
+				5EA665511B855ED500A487C3 /* devcerttemplate.dat in Resources */,
+				5EA665521B855ED500A487C3 /* iOS-cap.xml in Resources */,
+				5EA665541B855ED500A487C3 /* volog.cfg in Resources */,
 				0B1AFBDF1B0C09BB00347DFA /* play.png in Resources */,
+				5EA665551B855ED500A487C3 /* voVidDec-ios.dat in Resources */,
 				0B1AFBE01B0C09BB00347DFA /* Images.xcassets in Resources */,
 				0B1AFBDE1B0C09BB00347DFA /* pause.png in Resources */,
 				0B1AFBDD1B0C09BB00347DFA /* ooyala_logo.png in Resources */,
@@ -434,11 +490,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jon Slenk (SB334G8GBU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/VendorLibraries",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OoyalaSDK-bggukxbtjposffhjkaloyjtxnkxf/Build/Products/Debug-iphoneos",
+					"/Users/jonslenk/Dev/repos/ios-sdk/vendor/SecurePlayer/release",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ChromecastSampleApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -459,11 +517,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jon Slenk (SB334G8GBU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/VendorLibraries",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OoyalaSDK-bggukxbtjposffhjkaloyjtxnkxf/Build/Products/Debug-iphoneos",
+					"/Users/jonslenk/Dev/repos/ios-sdk/vendor/SecurePlayer/release",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ChromecastSampleApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

@@ -22,4 +22,9 @@
   }
   return self;
 }
+
+- (id)initWithTitle:(NSString *)title pcode: (NSString *)pcode embedCode:(NSString *)embedCode domain:(NSString *)domain viewController:(Class)viewController {
+  return [self initWithTitle:title embedCode:embedCode pcode:pcode domain:domain viewController:viewController];
+}
+
 @end

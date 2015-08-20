@@ -12,9 +12,14 @@
 #import <OoyalaSDK/OOEmbeddedSecureURLGenerator.h>
 #import <OoyalaSDK/OOPlayerDomain.h>
 #import <OoyalaSDK/OOVideo.h>
+#import <OoyalaSDK/OOStreamPlayer.h>
 #import <OoyalaCastSDK/OOCastPlayer.h>
+#import <OoyalaSecurePlayerSDK/OOOoyalaSecurePlayerSDK.h>
 #import "Utils.h"
 #import "OOCastManagerFetcher.h"
+
+#define PERSONALIZATION_SESSION_ID @"<set me>"
+#define PERSONALIZATION_APP_VERSION @"<set me>"
 
 @interface PlayerViewController ()
 @property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar;
@@ -46,9 +51,9 @@
    * However, for debugging you can use them to locally generate Ooyala Player Tokens.
    */
   self.authorizeHost = @"http://player.ooyala.com";
-  self.apiKey = @"fill me in";
-  self.secret = @"fill me in";
-  self.accountId = @"accountId";
+  self.apiKey = @"N5dGEyOrMsKgdLgNp2B0wirtpqm7.JYxWw";
+  self.secret = @"A26OeYk5Qx967WoAnUGUnH_1IFUhVBP6uo4IEJmH";
+  self.accountId = @"ooyalaqatesting@gmail.com";
 
   // Fetch castManager and castButton
   self.castManager = [OOCastManagerFetcher fetchCastManager];
@@ -64,7 +69,13 @@
 
   self.ooyalaPlayer = [[OOOoyalaPlayer alloc] initWithPcode:self.pcode domain:[[OOPlayerDomain alloc] initWithString:self.playerDomain] embedTokenGenerator:self];
   self.ooyalaPlayerViewController = [[OOOoyalaPlayerViewController alloc] initWithPlayer:self.ooyalaPlayer];
-
+  [OOStreamPlayer setDefaultPlayerInfo: [OOSecurePlayerPlayerInfo new]];
+  [OOOoyalaSecurePlayerSDK
+   registerSecurePlayerMapping:self.ooyalaPlayerViewController.player.streamPlayerMapping
+   appVersion:PERSONALIZATION_APP_VERSION
+   sessionId:PERSONALIZATION_SESSION_ID
+   personalizationServerUrl:OO_HTTP_PRE_PRODUCTION_PERSONALIZATION_SERVER];
+  
   [self.ooyalaPlayerViewController.view setFrame:self.videoView.bounds];
   [self addChildViewController:self.ooyalaPlayerViewController];
   [self.videoView addSubview:self.ooyalaPlayerViewController.view];

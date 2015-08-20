@@ -141,41 +141,15 @@
 
 - (void)buildMediaDictionary {
   self.mediaList = [[NSMutableArray alloc] init];
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"HLS Asset"
-                                                                          embedCode:@"Y1ZHB1ZDqfhCPjYYRbCEOz0GR8IsVRm1"
-                                                                              pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
-                                                                             domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"VOD with CC Asset"
-                                                                          embedCode:@"92cWp0ZDpDm4Q8rzHfVK6q9m6OtFP-ww"
-                                                                              pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
-                                                                             domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"MP4 Video"
-                                                                          embedCode:@"h4aHB1ZDqV7hbmLEv4xSOx3FdUUuephx"
-                                                                              pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
-                                                                             domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Encrypted HLS Asset"
-                                                                          embedCode:@"ZtZmtmbjpLGohvF5zBLvDyWexJ70KsL-"
-                                                                              pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
-                                                                             domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Playready Smooth with Clear HLS Backup"
-                                                                          embedCode:@"pkMm1rdTqIAxx9DQ4-8Hyp9P_AHRe4pt"
-                                                                              pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
-                                                                             domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
-
-  //This asset will not be configured correctly. To test your OPT-enabled assets, you need:
-  // 1. an OPT-enabled embed code (set here)
-  // 2. the correlating PCode (set here)
-  // 3. an API Key and Secret for the provider to locally-sign the authorization (set in the PlayerViewController)
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Ooyala Player Token Asset (unconfigured)"
-                                                                          embedCode:@"0yMjJ2ZDosUnthiqqIM3c8Eb8Ilx5r52"
-                                                                              pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
-                                                                             domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Clear HLS Live Stream" pcode:@"N5dGEyOrMsKgdLgNp2B0wirtpqm7" embedCode:@"Rva245YTpHWP-9bchhJL25BMl1shI2fG" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Device Bind to Entitlement" pcode:@"N5dGEyOrMsKgdLgNp2B0wirtpqm7" embedCode:@"Q3NmpoczpUH__SVSKRI0BbFl3A9CtHSL" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Device Limit" pcode:@"N5dGEyOrMsKgdLgNp2B0wirtpqm7" embedCode:@"0xNmpoczpeNkx6Pq8ZOPwPUu6CuzFKeY" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Ooyala Playready Smooth VOD" pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m" embedCode:@"5jNzJuazpFtKmloYZQmgPeC_tqDKHX9r" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Ooyala Playready HLS VOD with Closed Captions" pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m" embedCode: @"xrcGYydDq1wU7nSmX7AQB3Uq4Fu3BjuE" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Microsoft Playready Smooth VOD" pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m" embedCode:@"V2NWk2bTpI1ac0IaicMaFuMcIrmE9U-_" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Microsoft Clear Smooth VOD" pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m" embedCode:@"1nNGk2bTq5ECsz5cRlZ4ONAAk96drr6T" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Ooyala Clear HLS VOD" pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m" embedCode:@"Y1ZHB1ZDqfhCPjYYRbCEOz0GR8IsVRm1"  domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
+  [self.mediaList addObject:[[ChromecastPlayerSelectionOption alloc] initWithTitle:@"VOD  with Closed Captions"pcode:@"FoeG863GnBL4IhhlFC1Q2jqbkH9m" embedCode:@"92cWp0ZDpDm4Q8rzHfVK6q9m6OtFP-ww" domain:@"http://www.ooyala.com" viewController:[PlayerViewController class]]];
 }
 
 - (void)buildTableViewCells {
