@@ -527,8 +527,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VendorLibraries",
-					"/Users/zchen/repos/ios-sdk/submodules/ios_sample_apps/vendor/Google/GoogleInteractiveMediaAds-GoogleIMA3ForAdMob",
-					"/Users/zchen/repos/ios-sdk/submodules/ios_sample_apps/vendor/Google/GoogleMobileAdsSdkiOS-7.4.1",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/IMASampleApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -556,8 +554,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VendorLibraries",
-					"/Users/zchen/repos/ios-sdk/submodules/ios_sample_apps/vendor/Google/GoogleInteractiveMediaAds-GoogleIMA3ForAdMob",
-					"/Users/zchen/repos/ios-sdk/submodules/ios_sample_apps/vendor/Google/GoogleMobileAdsSdkiOS-7.4.1",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/IMASampleApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
