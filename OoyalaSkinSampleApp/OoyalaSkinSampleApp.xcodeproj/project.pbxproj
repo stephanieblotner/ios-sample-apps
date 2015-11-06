@@ -19,24 +19,22 @@
 		0B78245B1B2B855500D718AB /* DefaultSkinPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B78245A1B2B855500D718AB /* DefaultSkinPlayerViewController.m */; };
 		0B7824671B2FA0BD00D718AB /* DefaultSkinPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7824661B2FA0BD00D718AB /* DefaultSkinPlayerView.xib */; };
 		0B78246B1B2FA5DA00D718AB /* SmallSkinPlayerViewTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B78246A1B2FA5DA00D718AB /* SmallSkinPlayerViewTwo.xib */; };
-		0B8E7F161BDED49C0078155C /* AdManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F151BDED49C0078155C /* AdManager.framework */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F181BDED4AA0078155C /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F171BDED4AA0078155C /* GoogleInteractiveMediaAds.framework */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F1A1BDED4B70078155C /* OoyalaFreewheelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F191BDED4B70078155C /* OoyalaFreewheelSDK.framework */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F1C1BDED4BD0078155C /* OoyalaIMASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F1B1BDED4BD0078155C /* OoyalaIMASDK.framework */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F1E1BDED4C40078155C /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F1D1BDED4C40078155C /* OoyalaSDK.framework */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F201BDED4CC0078155C /* OoyalaSkinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F1F1BDED4CC0078155C /* OoyalaSkinSDK.framework */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F281BDED4F80078155C /* alice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F261BDED4F80078155C /* alice.ttf */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F291BDED4F80078155C /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F271BDED4F80078155C /* fontawesome-webfont.ttf */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F3F1BE03D0E0078155C /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F371BE03D0E0078155C /* en.json */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F401BE03D0E0078155C /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F381BE03D0E0078155C /* es.json */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F411BE03D0E0078155C /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F391BE03D0E0078155C /* package.json */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F421BE03D0E0078155C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3A1BE03D0E0078155C /* README.md */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F431BE03D0E0078155C /* skin-schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3B1BE03D0E0078155C /* skin-schema.json */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F441BE03D0E0078155C /* skin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3C1BE03D0E0078155C /* skin.json */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F451BE03D0E0078155C /* validate.js in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3D1BE03D0E0078155C /* validate.js */; settings = {ASSET_TAGS = (); }; };
-		0B8E7F461BE03D0E0078155C /* zh.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3E1BE03D0E0078155C /* zh.json */; settings = {ASSET_TAGS = (); }; };
-		0BB8E7A51BE0438300003E2D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0BB8E7A41BE0438300003E2D /* README.md */; settings = {ASSET_TAGS = (); }; };
-		0BB8E7AA1BE0440600003E2D /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BB8E7A91BE0440600003E2D /* main.jsbundle */; settings = {ASSET_TAGS = (); }; };
+		0B8E7F161BDED49C0078155C /* AdManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F151BDED49C0078155C /* AdManager.framework */; };
+		0B8E7F181BDED4AA0078155C /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F171BDED4AA0078155C /* GoogleInteractiveMediaAds.framework */; };
+		0B8E7F1A1BDED4B70078155C /* OoyalaFreewheelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F191BDED4B70078155C /* OoyalaFreewheelSDK.framework */; };
+		0B8E7F1C1BDED4BD0078155C /* OoyalaIMASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F1B1BDED4BD0078155C /* OoyalaIMASDK.framework */; };
+		0B8E7F1E1BDED4C40078155C /* OoyalaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F1D1BDED4C40078155C /* OoyalaSDK.framework */; };
+		0B8E7F201BDED4CC0078155C /* OoyalaSkinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8E7F1F1BDED4CC0078155C /* OoyalaSkinSDK.framework */; };
+		0B8E7F281BDED4F80078155C /* alice.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F261BDED4F80078155C /* alice.ttf */; };
+		0B8E7F291BDED4F80078155C /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F271BDED4F80078155C /* fontawesome-webfont.ttf */; };
+		0B8E7F3F1BE03D0E0078155C /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F371BE03D0E0078155C /* en.json */; };
+		0B8E7F401BE03D0E0078155C /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F381BE03D0E0078155C /* es.json */; };
+		0B8E7F411BE03D0E0078155C /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F391BE03D0E0078155C /* package.json */; };
+		0B8E7F431BE03D0E0078155C /* skin-schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3B1BE03D0E0078155C /* skin-schema.json */; };
+		0B8E7F441BE03D0E0078155C /* skin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3C1BE03D0E0078155C /* skin.json */; };
+		0B8E7F451BE03D0E0078155C /* validate.js in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3D1BE03D0E0078155C /* validate.js */; };
+		0B8E7F461BE03D0E0078155C /* zh.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E7F3E1BE03D0E0078155C /* zh.json */; };
+		0BB8E7AA1BE0440600003E2D /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BB8E7A91BE0440600003E2D /* main.jsbundle */; };
 		0BB8E7AC1BE0449000003E2D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB8E7AB1BE0449000003E2D /* Social.framework */; };
 		0BB8E7AE1BE0449500003E2D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB8E7AD1BE0449500003E2D /* MessageUI.framework */; };
 		0BFFF7B21B3A201A00D72444 /* TallPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFFF7B11B3A201A00D72444 /* TallPlayerView.xib */; };
@@ -394,9 +392,7 @@
 				0B78244C1B2B834F00D718AB /* PlayerSelectionOption.m in Sources */,
 				0B78244D1B2B834F00D718AB /* SampleAppPlayerViewController.m in Sources */,
 				97930C2B1B6952D0009B3512 /* IMAPlayerViewController.m in Sources */,
-				0B8E7F421BE03D0E0078155C /* README.md in Sources */,
 				97930C101B6709A9009B3512 /* MasterListViewControllerTableViewController.m in Sources */,
-				0BB8E7A51BE0438300003E2D /* README.md in Sources */,
 				97930C191B670D9F009B3512 /* FreewheelTestsListViewController.m in Sources */,
 				0B78245B1B2B855500D718AB /* DefaultSkinPlayerViewController.m in Sources */,
 			);
