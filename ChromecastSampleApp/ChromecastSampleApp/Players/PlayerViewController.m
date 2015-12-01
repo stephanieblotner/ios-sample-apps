@@ -16,6 +16,8 @@
 #import <OoyalaCastSDK/OOCastPlayer.h>
 #import "Utils.h"
 #import "OOCastManagerFetcher.h"
+#import <OoyalaSecurePlayerSDK/OOOoyalaSecurePlayerSDK.h>
+#import <OoyalaSDK/OOStreamPlayer.h>
 
 @interface PlayerViewController ()
 @property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar;
@@ -68,6 +70,14 @@
 
   self.ooyalaPlayer = [[OOOoyalaPlayer alloc] initWithPcode:self.pcode domain:[[OOPlayerDomain alloc] initWithString:self.playerDomain] embedTokenGenerator:self];
   self.ooyalaPlayerViewController = [[OOOoyalaPlayerViewController alloc] initWithPlayer:self.ooyalaPlayer];
+  [OOStreamPlayer setDefaultPlayerInfo: [OOSecurePlayerPlayerInfo new]];
+  NSString *purl;
+  purl = OO_HTTP_PRE_PRODUCTION_PERSONALIZATION_SERVER;
+  [OOOoyalaSecurePlayerSDK
+   registerSecurePlayerMapping:_ooyalaPlayerViewController.player.streamPlayerMapping
+   appVersion:@"0.0.1"
+   sessionId:@"sessionId"
+   personalizationServerUrl:purl];
   
   [self.ooyalaPlayerViewController.view setFrame:self.videoView.bounds];
   [self addChildViewController:self.ooyalaPlayerViewController];
