@@ -142,7 +142,12 @@
 
 - (void)buildMediaDictionary {
   self.mediaList = [[NSMutableArray alloc] init];
-  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"HLS Asset"
+  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"Device Limit"
+                                                                          embedCode:@"0xNmpoczpeNkx6Pq8ZOPwPUu6CuzFKeY"
+                                                                              pcode:@"N5dGEyOrMsKgdLgNp2B0wirtpqm7"
+                                                                             domain:@"http://www.ooyala.com"
+                                                                     viewController:[PlayerViewController class]]];
+/*  [self.mediaList addObject: [[ChromecastPlayerSelectionOption alloc] initWithTitle:@"HLS Asset"
                                                                           embedCode:@"Y1ZHB1ZDqfhCPjYYRbCEOz0GR8IsVRm1"
                                                                               pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
                                                                              domain:@"http://www.ooyala.com"
@@ -182,7 +187,7 @@
                                                                           embedCode:@"0yMjJ2ZDosUnthiqqIM3c8Eb8Ilx5r52"
                                                                               pcode:@"c0cTkxOqALQviQIGAHWY5hP0q9gU"
                                                                              domain:@"http://www.ooyala.com"
-                                                                     viewController:[PlayerViewController class]]];
+                                                                     viewController:[PlayerViewController class]]];*/
 }
 
 - (void)buildTableViewCells {

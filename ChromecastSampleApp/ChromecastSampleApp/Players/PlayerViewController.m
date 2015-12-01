@@ -48,13 +48,14 @@
    * However, for debugging you can use them to locally generate Ooyala Player Tokens.
    */
   self.authorizeHost = @"http://player.ooyala.com";
-  self.apiKey = @"fill me in";
-  self.secret = @"fill me in";
-  self.accountId = @"accountId";
+  self.apiKey = @"N5dGEyOrMsKgdLgNp2B0wirtpqm7.JYxWw";
+  self.secret = @"A26OeYk5Qx967WoAnUGUnH_1IFUhVBP6uo4IEJmH";
+  self.accountId = @"ooyalaqatesting@gmail.com";
   
   // Fetch castManager and castButton
   self.castManager = [OOCastManagerFetcher fetchCastManager];
   self.castManager.delegate = self;
+  [self.castManager setAdditionalInitParams:@{@"pbid":@"600bf21c77274c97adcbaec3e44b5bc3"}];
   
   UIBarButtonItem *leftbutton = [[UIBarButtonItem alloc] initWithCustomView:[self.castManager getCastButton]];
   self.navigationBar.rightBarButtonItem = leftbutton;
