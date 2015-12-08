@@ -18,6 +18,7 @@
 #import "OOCastManagerFetcher.h"
 #import <OoyalaSecurePlayerSDK/OOOoyalaSecurePlayerSDK.h>
 #import <OoyalaSDK/OOStreamPlayer.h>
+#define OO_HTTP_PRE_PRODUCTION_PERSONALIZATION_SERVER @"http://persopp.purpledrm.com/PersoServer/Personalization"
 
 @interface PlayerViewController ()
 @property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar;
